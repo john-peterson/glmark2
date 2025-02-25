@@ -214,6 +214,7 @@ main(int argc, char *argv[])
     CanvasGeneric canvas(native_state, gl_state, Options::size.first, Options::size.second);
 
     canvas.offscreen(Options::offscreen);
+    printf("off screen selected\n");
 
     canvas.visual_config(Options::visual_config);
 
@@ -244,6 +245,7 @@ main(int argc, char *argv[])
     Log::info("=======================================================\n");
     canvas.print_info();
     Log::info("=======================================================\n");
+    printf("printed info\n");
 
     results_file.end_info();
 
